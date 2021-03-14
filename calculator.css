@@ -1,0 +1,87 @@
+table.calc {
+    height: 100%;
+    width: 100%;
+    border-width: 2pt;
+    border-style: solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr.calcDisplay {
+    height: 12%;
+}
+
+tr.opDisplay {
+    height: 8%;
+}
+
+.calc td {
+    width: 64px;
+    font-family: 'Consolas', monospace;
+    font-size: 150%;
+    text-align: center;
+    border-width: 2pt;
+    border-style: solid;
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
+}
+
+.calc .calcDisplay td{
+    background-color: lightcyan !important;
+    font-family: 'Consolas', monospace;
+    font-weight: bold;
+    font-size: 200%;
+    vertical-align:bottom;
+    padding-right: 1em;
+    text-align: right;
+    border-bottom-style: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.calc .opDisplay td {
+    background-color: lightcyan !important;
+    font-family: 'Consolas', monospace;
+    font-size: 100%;
+    padding-right: 2em;
+    text-align: right;
+    border-top-style: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.opDisplay span {
+    background-color: darkcyan;
+    color: white;
+    margin-left: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+
+.calc td.Op {
+    background-color: #e8e8e8;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.calc td:hover {
+    background-color: aliceblue;
+}
+
+#calculatorPage {
+     width: 100%;
+}
+
+.log {
+    font-family: 'Consolas', monospace;
+    white-space: pre;
+}
+
+#calculatorArea {
+    margin: auto;
+    width: 96%;
+    height: 96vh;
+}

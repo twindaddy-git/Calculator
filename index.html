@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="calculator.js">
+	</script>
+	<link rel="stylesheet" href="calculator.css">
+</head>
+
+<body onload="onInit()">
+	<div id="calculatorPage">
+		<div id="calculatorArea">
+			<table class="calc">
+				<tr class="calcDisplay">
+					<td colspan="4" id="display">0</td>
+				</tr>
+				<tr class="opDisplay">
+					<td colspan="4" id="opdisplay"></td>
+				</tr>
+				<tr>
+					<td class="Op" onclick="onAction(actionKeys.ce);">CE</td>
+					<td class="Op" onclick="onAction(actionKeys.c);">C</td>
+					<td class="Op" onclick="onAction(actionKeys.bsp);" colspan="2">&larr;</td>
+				</tr>
+				<tr>
+					<td class="Op" onclick="onOp(ops.rep);">1/x</td>
+					<td class="Op" onclick="onOp(ops.sqr);">x<sup>2</sup></td>
+                <td class="Op" onclick="onOp(ops.sqt);">&#x221A;</td>
+                <td class="Op" onclick="onOp(ops.div);">/</td>
+            </tr>
+            <tr>
+                <td onclick="onDigit(this);">7</td>
+                <td onclick="onDigit(this);">8</td>
+                <td onclick="onDigit(this);">9</td>
+                <td class="Op" onclick="onOp(ops.mul);">*</td>
+            </tr>
+            <tr>
+                <td onclick="onDigit(this);">4</td>
+                <td onclick="onDigit(this);">5</td>
+                <td onclick="onDigit(this);">6</td>
+                <td class="Op" onclick="onOp(ops.sub);">-</td>
+            </tr>
+            <tr>
+                <td onclick="onDigit(this);">1</td>
+                <td onclick="onDigit(this);">2</td>
+                <td onclick="onDigit(this);">3</td>
+                <td class="Op" onclick="onOp(ops.add);">+</td>
+            </tr>
+            <tr>
+                <td class="Op" onclick="onOp(ops.neg);">+/-</td>
+                <td onclick="onDigit(this);">0</td>
+                <td onclick="onDigit(this);">.</td>
+                <td class="Op" onclick="onOp(ops.equ);">=</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
